@@ -5,8 +5,8 @@ stty susp undef
 
 clear
 rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
-echo"Kali - Acesso Remoto (VM)"
-echo"By Dimitri"
+echo "Kali - Acesso Remoto (VM)"
+echo "By Dimitri"
 echo "___________________________"
 echo "Baixando Ngrok..."
 echo "___________________________"
