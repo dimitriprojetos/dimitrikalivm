@@ -16,7 +16,7 @@ function goto
 
 : ngrok
 clear
-echo "Kali - Acesso Remoto (VM)"
+echo "Kali Linux - Acesso Remoto (VM)"
 echo "By Dimitri"
 echo "Acesse o Ngrok para obter o token de autenticação."
 read -p "Insira o token de autenticação: " CRP
@@ -34,7 +34,7 @@ sleep 1
 if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&1; then echo OK; else echo "Erro Ngrok! Tente novamente." && sleep 1 && goto ngrok; fi
 docker run --rm -d --network host --privileged --name nomachine-xfce4-kali -e PASSWORD=123456 -e USER=user --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-kali-desktop:latest
 clear
-echo "Kali - Acesso Remoto (VM)"
+echo "Kali Linux - Acesso Remoto (VM)"
 echo "By Dimitri"
 echo "Acesse o NoMachine para usar a máquina."
 echo "Informações - NoMachine:"
